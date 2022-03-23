@@ -1,0 +1,94 @@
+:root {
+    --title-font: 'Lobster', cursive;
+    --bg-color: #1F1D36;
+    --bg-image: url("https://github.com/Soriyu1123/Images/blob/main/Computer.jpg?raw=true");
+    --text-color: #F7F7F7;
+}
+
+body {
+    background: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+/* this is the code for the container */
+body, .container, .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    min-height: 8;
+}
+
+.photo img {
+    width: 6rem;
+    border-radius: 50% 20% / 10% 40%;
+    z-index: 1;
+    margin: 2rem 0;
+}
+
+/* this is the shadow on the image */
+.circle {
+    width: 15rem;
+    height: 2rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(284deg, rgba(0,0,0,0.2) 100%, rgba(240,236,227,1) 100%);
+    border-radius: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 215px;
+}
+
+/* this is the code for the button */
+
+.profile {
+    margin-top: 2rem;
+}
+
+.profile button {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h1, h4 {
+    padding: 0 0 1rem 0;
+}
+
+.social-icon {
+    padding: 0 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+
+
+}
+
+.social-icon:hover {
+    color: aquamarine;
+    transition-duration: 0.4s;
+}
+
+
+/* this is the code for card */
+.card {
+    width: 25rem;
+    padding: 0 3rem;
+    border-radius: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(284deg, rgba(0,0,0,0.4990371148459384) 100%, rgba(240,236,227,1) 100%);
+}
+
+
+
